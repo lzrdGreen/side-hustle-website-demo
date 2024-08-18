@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Gallery</title>
+        <link rel="icon" type="image/png" href="images/b3.png">
+        <link rel="stylesheet" href="css/style.css">
+        <style>
+            #colourscheme {
+                display: grid;
+                grid-template-columns: auto auto;
+                justify-content: space-evenly;
+            }
+        div.gallery {
+          display: inline-block;
+          margin: 5px;
+          border: 1px solid #ccc;
+          width: 180px;
+        }
+        
+        
+        div.gallery:hover {
+          border: 1px solid #777;
+        }
+        
+        div.gallery img {
+          width: 100%;
+          height: auto;
+        }
+        
+        div.desc {
+          padding: 15px;
+          text-align: center;
+        }
+
+
+
+        body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  vertical-align: middle;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  position: relative;
+  max-width: 50%;
+  margin: 0 auto; /* center the container */
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+        </style>
+    <body>
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </nav>
+        </header>
+        <h1 id="top">This is Gallery</h1> 
+        <p>Enjoy some pix!</p>
+        <a href="images/a1.png" target="_blank"><figure>
+            <img src="images/a1.png" alt="Dragon" width="30%">
+            <figcaption style="font-size: 20px;">A nice toy dragon</figcaption>
+        </figure></a>
+        
+        <a href="images/c2.png" target="_blank"><figure>
+            <img src="images/c2.png" alt="Mechanical Cat" width="30%">
+            <figcaption style="font-size: 20px;">A Mechanical Cat</figcaption>
+        </figure></a>
+        
+        <a href="images/c1.png" target="_blank"><figure>
+            <img src="images/c1.png" alt="Fluffy Cat" width="30%">
+            <figcaption style="font-size: 20px;">A Cute Fluffy Cat Among Flowers</figcaption>
+        </figure></a>
+        <p>All images are AI generated</p>
+    <h1>The Simplest Image Gallery</h1>
+    <!--
+    Borrowed from: https://www.w3schools.com/css/css_image_gallery.asp
+    -->
+    <div class="gallery">
+        <a target="_blank" href="images/a3.png">
+          <img src="images/a3.png" alt="A silent lamb" width="600" height="400">
+        </a>
+        <div class="desc">A silent lamb</div>
+      </div>
+      
+      <div class="gallery">
+        <a target="_blank" href="images/a4.png">
+          <img src="images/a4.png" alt="A young alien" width="600" height="400">
+        </a>
+        <div class="desc">A young alien</div>
+      </div>
+
+      <div class="gallery">
+        <a target="_blank" href="images/a5.png">
+          <img src="images/a5.png" alt="An alien" width="600" height="400">
+        </a>
+        <div class="desc">An alien</div>
+      </div>
+
+      <div class="gallery">
+        <a target="_blank" href="images/a6.png">
+          <img src="images/a6.png" alt="An alien" width="600" height="400">
+        </a>
+        <div class="desc">An agony aunt</div>
+      </div>
+
+      <div class="gallery">
+        <a target="_blank" href="images/a7.png">
+          <img src="images/a7.png" alt="An alien" width="600" height="400">
+        </a>
+        <div class="desc">My pet</div>
+      </div>
+
+      <div class="gallery">
+        <a target="_blank" href="images/a8.png">
+          <img src="images/a8.png" alt="An alien" width="600" height="400">
+        </a>
+        <div class="desc">A friend of mine</div>
+      </div>
+
+      <div class="gallery">
+        <a target="_blank" href="images/a9.png">
+          <img src="images/a9.png" alt="An alien" width="600" height="400">
+        </a>
+        <div class="desc">I met this guy in the pub</div>
+      </div>
+
+      <div class="gallery">
+        <a target="_blank" href="images/a10.png">
+          <img src="images/a10.png" alt="An alien" width="600" height="400">
+        </a>
+        <div class="desc">Too old to die</div>
+      </div>
+      
+      <div class="gallery">
+        <a target="_blank" href="images/b1.png">
+          <img src="images/b1.png" alt="Hacker" width="600" height="400">
+        </a>
+        <div class="desc">A computer scientist</div>
+      </div>
+      
+      <div class="gallery">
+        <a target="_blank" href="images/b2.png">
+          <img src="images/b2.png" alt="Landsknecht" width="600" height="400">
+        </a>
+        <div class="desc">A Landsknecht</div>
+      </div>
+
+
+      <h1 style="text-align:center">Slideshow Gallery</h1>
+  <!--
+  Borrowed from: https://www.w3schools.com/howto/howto_js_slideshow_gallery.asp
+  -->
+<div class="container">
+  <div class="mySlides">
+    <div class="numbertext">1 / 6</div>
+    <img src="images/a4.png" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">2 / 6</div>
+    <img src="images/a5.png" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">3 / 6</div>
+    <img src="images/a6.png" style="width:100%">
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">4 / 6</div>
+    <img src="images/l.png" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">5 / 6</div>
+    <img src="images/a7.png" style="width:100%">
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">6 / 6</div>
+    <img src="images/a8.png" style="width:100%">
+  </div>
+    
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
+
+  <div class="caption-container">
+    <p id="caption"></p>
+  </div>
+
+  <div class="row">
+    <div class="column">
+      <img class="demo cursor" src="images/a4.png" style="width:100%" onclick="currentSlide(1)" alt="Alien 1">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="images/a5.png" style="width:100%" onclick="currentSlide(2)" alt="Alien 2">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="images/a6.png" style="width:100%" onclick="currentSlide(3)" alt="Alien 3">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="images/l.png" style="width:100%" onclick="currentSlide(4)" alt="A river view">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="images/a7.png" style="width:100%" onclick="currentSlide(5)" alt="Alien 4">
+    </div>    
+    <div class="column">
+      <img class="demo cursor" src="images/a8.png" style="width:100%" onclick="currentSlide(6)" alt="Alien 5">
+    </div>
+  </div>
+</div>
+
+
+    <h2>Text and Background Colours</h2>
+        <p><span style="background-color: #E0FFFF;">Can you see the difference between the paragraphs below?</span> Hint: the text is the same (shamelessly borrowed from 
+        <a href="https://en.wikipedia.org/wiki/Elon_Musk">Wikipedia</a>)
+        </p>
+    <section id="colourscheme">
+        <div>
+        <p>
+            Elon Reeve Musk FRS is a businessman and investor known for his key roles in space company SpaceX and automotive company 
+             Tesla, Inc. Other involvements include ownership of X Corp., 
+             the company that operates the social media platform X, and 
+             his role in the founding of The Boring Company, xAI, 
+             Neuralink and OpenAI. In 2017, Musk founded The Boring 
+             Company to construct tunnels, and revealed plans for 
+             specialized, underground, high-occupancy vehicles that could 
+             travel up to 150 miles per hour (240 km/h) and thus 
+             circumvent above-ground traffic in major cities. Two tunnel 
+             projects announced in 2018, in Chicago and West Los Angeles, 
+             have been canceled.</p>
+        <p style="color:blue; background-color: white;">
+            Elon Reeve Musk FRS is a businessman and investor known for his
+            key roles in space company SpaceX and automotive company 
+            Tesla, Inc. Other involvements include ownership of X Corp., 
+            the company that operates the social media platform X, and 
+            his role in the founding of The Boring Company, xAI, 
+            Neuralink and OpenAI. In 2017, Musk founded The Boring 
+            Company to construct tunnels, and revealed plans for 
+            specialized, underground, high-occupancy vehicles that could 
+            travel up to 150 miles per hour (240 km/h) and thus 
+            circumvent above-ground traffic in major cities. Two tunnel 
+            projects announced in 2018, in Chicago and West Los Angeles, 
+            have been canceled.</p>
+        <p style="color:black; background-color: white;">
+            Elon Reeve Musk FRS is a businessman and investor known for his
+             key roles in space company SpaceX and automotive company 
+             Tesla, Inc. Other involvements include ownership of X Corp., 
+             the company that operates the social media platform X, and 
+             his role in the founding of The Boring Company, xAI, 
+             Neuralink and OpenAI. In 2017, Musk founded The Boring 
+             Company to construct tunnels, and revealed plans for 
+             specialized, underground, high-occupancy vehicles that could 
+             travel up to 150 miles per hour (240 km/h) and thus 
+             circumvent above-ground traffic in major cities. Two tunnel 
+             projects announced in 2018, in Chicago and West Los Angeles, 
+             have been canceled.</p>
+        <p style="color:yellow; background-color: black;">
+            Elon Reeve Musk FRS is a businessman and investor known for his
+             key roles in space company SpaceX and automotive company 
+             Tesla, Inc. Other involvements include ownership of X Corp., 
+             the company that operates the social media platform X, and 
+             his role in the founding of The Boring Company, xAI, 
+             Neuralink and OpenAI. In 2017, Musk founded The Boring 
+             Company to construct tunnels, and revealed plans for 
+             specialized, underground, high-occupancy vehicles that could 
+             travel up to 150 miles per hour (240 km/h) and thus 
+             circumvent above-ground traffic in major cities. Two tunnel 
+             projects announced in 2018, in Chicago and West Los Angeles, 
+             have been canceled.</p>
+        <p style="color:black; background-color: yellow;">
+            Elon Reeve Musk FRS is a businessman and investor known for his
+             key roles in space company SpaceX and automotive company 
+             Tesla, Inc. Other involvements include ownership of X Corp., 
+             the company that operates the social media platform X, and 
+             his role in the founding of The Boring Company, xAI, 
+             Neuralink and OpenAI. In 2017, Musk founded The Boring 
+             Company to construct tunnels, and revealed plans for 
+             specialized, underground, high-occupancy vehicles that could 
+             travel up to 150 miles per hour (240 km/h) and thus 
+             circumvent above-ground traffic in major cities. Two tunnel 
+             projects announced in 2018, in Chicago and West Los Angeles, 
+             have been canceled.</p>
+        </div>
+        <div>
+            <figure>
+                <img src="images/ElonMusk.png" alt="Elon Musk" width="75%">
+                <figcaption style="font-size: 20px;">Elon Musk</figcaption>
+            </figure>
+        </div>
+    </section>
+    <h3>Summary</h3>
+        <p>When it comes to text colour and readability, blue text on a 
+            white background is actually the easiest to read, 
+            but often avoided as it resembles hyperlinks. That's why black 
+            text on a white background is the most common choice - it's 
+            familiar and doesn't conflict with link colours. For dark mode,
+            yellow on black works well. For those feeling bold, black text 
+            on a yellow background provides high contrast, though it should 
+            be used carefully as it can be visually intense.</p>
+        
+        
+        <a href="#top">Jump to the Top</a>
+        <p></p>
+        <footer>
+          <p>Dream it. Build it. <br/>Best value for money</p>
+        </footer>
+        <script>
+          let slideIndex = 1;
+          showSlides(slideIndex);
+          
+          function plusSlides(n) {
+            showSlides(slideIndex += n);
+          }
+          
+          function currentSlide(n) {
+            showSlides(slideIndex = n);
+          }
+          
+          function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("demo");
+            let captionText = document.getElementById("caption");
+            if (n > slides.length) {slideIndex = 1}
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+              dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";
+            dots[slideIndex-1].className += " active";
+            captionText.innerHTML = dots[slideIndex-1].alt;
+          }
+          </script>
+      </body>
